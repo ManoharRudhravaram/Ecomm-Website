@@ -1,0 +1,36 @@
+.link{
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.links{
+    width: 40%;
+}
+
+.brand{
+    width: 10%;
+}
+
+.search{
+    width: 17%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav{
+    position: fixed;
+}
+
+.cart{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cart i{
+    text-decoration: none;
+}
+

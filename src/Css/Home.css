@@ -1,0 +1,19 @@
+
+.list
+{
+    height: 120px;
+    width: 95%;
+    margin: 8px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: azure;
+}
+
+.corosol{
+    margin: 5px 0px;
+}
+
+.prod{
+    margin: 5px 0;
+}
