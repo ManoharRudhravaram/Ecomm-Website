@@ -15,7 +15,7 @@ function SinglePage() {
   return (
     <>
       <center>
-        <div className="container">
+        <div className="container mt-5 mb-3">
           <div className="row main">
             <div className="col-md-6">
               <div className="img m-1">

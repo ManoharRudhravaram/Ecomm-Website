@@ -18,7 +18,7 @@ function AddtoCart({single}) {
   return (
     <>
     <ToggleBtns cartIncHandler={cartIncHandler} stock={stock} cartDecHandler={cartDecHandler} cartCount={cartCount}/>
-    <Link to='/Cart'> <button style={{backgroundColor:'yellow',border:'none',padding:'5px 10px',borderRadius:'3px'}} onClick={()=>{addCart({single,cartCount})}}>Add to Cart</button></Link>
+    <Link to='/Cart'> <button  className='btn btn-warning' onClick={()=>{addCart({single,cartCount})}}>Add to Cart</button></Link>
     </>
   )
 }

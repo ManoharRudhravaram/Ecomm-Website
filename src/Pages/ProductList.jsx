@@ -7,7 +7,7 @@ import { useFilter } from '../Context/FilterContext'
 function ProductList() {
     let { sorted } = useFilter();
     return (
-        <div className="container m-4">
+        <div className="container mt-1">
             <div className="row -flex justify-content-evenly">
                 <div className="col-md-4">
                     <FilterComp />

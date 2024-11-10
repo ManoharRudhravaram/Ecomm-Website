@@ -10,19 +10,19 @@ function FilterReducer(state, action) {
             let x = [...action.payload]
             let newData;
             function sortingValue(a, b) {
-                if (state.sorting == "lowest") {
+                if (state.sorting === "lowest") {
                     return a.price - b.price;
                 }
-                if (state.sorting == "highest") {
+                if (state.sorting === "highest") {
                     return b.price - a.price;
                 }
-                if (state.sorting == "A_Z") {
+                if (state.sorting === "A_Z") {
                     return a.title
                         .trim()
                         .toUpperCase()
                         .localeCompare(b.title.trim().toUpperCase());
                 }
-                if (state.sorting == "Z_A") {
+                if (state.sorting === "Z_A") {
                     return b.title
                         .trim()
                         .toUpperCase()
@@ -57,20 +57,20 @@ function FilterReducer(state, action) {
             }
             if (state.filter.category) {
                 arr = arr.filter((item) => {
-                    if (state.filter.category == item.category) {
+                    if (state.filter.category === item.category) {
                         return item
                     }
-                    else if (state.filter.category == 'ALL') {
+                    else if (state.filter.category === 'ALL') {
                         return item
                     }
                 })
             }
             if (state.filter.brand) {
                 arr = arr.filter((item) => {
-                    if (state.filter.brand == item.brand) {
+                    if (state.filter.brand === item.brand) {
                         return item
                     }
-                    else if (state.filter.brand == 'ALL') {
+                    else if (state.filter.brand === 'ALL') {
                         return item
                     }
                 })
@@ -82,25 +82,25 @@ function FilterReducer(state, action) {
             }
             // if (state.filter.valueBtn) {
             //     arr = arr.filter((item) => {
-            //         if (state.filter.valueBtn === "5000-10000") {
+            //         if (state.filter.valueBtn ==== "5000-10000") {
             //             return item.price <= 10000
             //         }
-            //         else if (state.filter.valueBtn === '10000-20000') {
+            //         else if (state.filter.valueBtn ==== '10000-20000') {
             //             return item.price <= 20000
             //         }
-            //         else if (state.filter.valueBtn === '20000-30000') {
+            //         else if (state.filter.valueBtn ==== '20000-30000') {
             //             return item.price <= 30000
             //         }
-            //         else if (state.filter.valueBtn === '30000-40000') {
+            //         else if (state.filter.valueBtn ==== '30000-40000') {
             //             return item.price <= 40000
             //         }
-            //         else if (state.filter.valueBtn === '40000-50000') {
+            //         else if (state.filter.valueBtn ==== '40000-50000') {
             //             return item.price <= 50000
             //         }
-            //         else if(state.filter.valueBtn==='morethan50000'){
+            //         else if(state.filter.valueBtn===='morethan50000'){
             //             return item.price > 50000
             //         }
-            //         else if(state.filter.valueBtn==='clear'){
+            //         else if(state.filter.valueBtn===='clear'){
             //             return item
             //         }
             //     })

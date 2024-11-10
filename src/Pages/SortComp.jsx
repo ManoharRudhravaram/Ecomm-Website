@@ -7,7 +7,7 @@ function SortComp() {
   let { setSorting,sorted } = useFilter()
   return (
     <>
-      <div className="main">
+      <div className="main mt-4">
         <h4>Products Available : {sorted.length}</h4>
         <select onChange={(e) => { setSorting(e) }}>
         <option value="lowest">Lowest</option>
