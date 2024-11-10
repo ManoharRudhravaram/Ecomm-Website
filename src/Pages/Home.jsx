@@ -8,7 +8,6 @@ function Home() {
     <>
       <div className="container">
         <div className="row my-3">
-          {/* Scrollable Category List */}
           <div className="list d-flex flex-nowrap">
             <div className="list-item text-center">
               <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Grocery" />
