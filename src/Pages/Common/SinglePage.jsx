@@ -19,7 +19,7 @@ function SinglePage() {
           <div className="row main">
             <div className="col-md-6">
               <div className="img m-1">
-                <img src={img} alt="c" />
+                <img src={img} alt="c" className='img-fluid'/>
               </div>
             </div>
             <div className="col-md-6">
